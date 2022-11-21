@@ -10,70 +10,171 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <div class="container">
+    <div class="container">
 
-        <!-- Elemento de destaque no navbar -->
-        <a href="index.html" class="navbar-brand">FW1</a>
+            <!-- Elemento de destaque no navbar -->
+            <a href="index.html" class="navbar-brand">FW1</a>
 
-        <!-- Cria um botão do tipo sanduiche quando o tamnaho da tela não for mais '1g' -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsite">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <!-- Cria um botão do tipo sanduiche quando o tamnaho da tela não for mais '1g' -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsite">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <!-- Criação dos itens do navbar ... -->
-        <div class="navbar-collapse collapse" id="navbarsite">
-            <ul class="navbar-nav"> 
-                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
-                <li class="nav-item"><a href="#"class="nav-link">Perfil</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Servicos</a></li>
-                <li class="nav-item"><a href="#"class="nav-link">Testemunhos</a></li>
-            </ul>
-        </div>
+            <!-- Criação dos itens do navbar ... -->
+            <div class="navbar-collapse collapse" id="navbarsite">
+                <ul class="navbar-nav"> 
+                    <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#"class="nav-link">Perfil</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Servicos</a></li>
+                    <li class="nav-item"><a href="#"class="nav-link">Testemunhos</a></li>
+                </ul>
+             </div>
 
         </nav>  <!-- <nav class="navbar"> -->
-    </div> <!--<div class="container">-->
+     <!--<div class="container">-->
     
-    <div class="carousel slide" id="carouselhome" data-ride="carousel">
-        
-        <div class="carousel-inner">
+        <div class="carousel slide" id="carouselhome" data-ride="carousel">
+            
+            <div class="carousel-inner">
 
-            <div class="carousel-item active">
-                <img src="/img/img1.jpg" class="img-fluid d-block">
-                <div class="carousel-caption">
-                    <h3>lorem, ipsum</h3>
-                    <p class="d-none d-sm-block">lorem, ipsum dolor sit amer consectetur adipisicing elit.</p>
+                <div class="carousel-item active">
+                    <img src="/img/img1.jpg" class="img-fluid d-block">
+                    <div class="carousel-caption">
+                        <h3>lorem, ipsum</h3>
+                        <p class="d-none d-sm-block">lorem, ipsum dolor sit amer consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img src="/img/img2.jpg" class="img-fluid d-block">
+                    <div class="carousel-caption">
+                        <h3>Esse, ipsam</h3>
+                        <p class="d-none d-sm-block">Maxime cum commodi illum exercitationem temporibus assumenda.</p>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img src="/img/img3.jpg" class="img-fluid d-block">
+                    <div class="carousel-caption">
+                        <h3>Eveniet animi doloribus ab vero</h3>
+                        <p class="d-none d-sm-block">maxime obcaecati, unde impedit ea temporibus quasi ex non sunt tempore?.</p>
+                    </div>
+                </div>
+
+                <a href="#carouselhome" class="carousel-control-prev" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a href="#carouselhome" class="carousel-control-next" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="sr-only">Proximo</span>
+                </a>
+
+                <ol class="carousel-indicators">
+                    <li class="active" data-target="#carouselhome" data-slide-to="0"></li>
+                    <li  data-target="#carouselhome" data-slide-to="1"></li>
+                    <li  data-target="#carouselhome" data-slide-to="2"></li>
+                </ol>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center my-5">
+                    <h1>Bem vindo ao site!</h1>
+                    <p>distinctio vaniam officiis...</p>
                 </div>
             </div>
-            <div class="carousel-item ">
-                <img src="/img/img2.jpg" class="img-fluid d-block">
-                <div class="carousel-caption">
-                    <h3>Esse, ipsam</h3>
-                    <p class="d-none d-sm-block">Maxime cum commodi illum exercitationem temporibus assumenda.</p>
+            <div class="row">
+                <div class="col-3">
+                    <nav class="navbar" id="navbarScrollspy">
+                        <nav class="nav nav-pills flex-column">
+                            <a href="#item1" class="nav-link">Inicio</a>
+                            <a href="#item2" class="nav-link">Perfil</a>
+                            <a href="#item3" class="nav-link">Serviços</a>
+                            <a href="#item4" class="nav-link">Testemunho</a>
+                            <a href="#item5" class="nav-link">Social</a>
+
+                            <nav class="navbar">
+                                <nav class=" nav nav-pills flex-column">
+                                    <a href="#item5-1" class="nav-link ml-2">Facebook</a>
+                                    <a href="#item5-2" class="nav-link ml-2">Twiter</a>
+                                    <a href="#item5-3" class="nav-link ml-2">Instagram</a>
+                                </nav>
+                            </nav>
+                        </nav>
+                    </nav>
+                </div>
+        <div class="col-9">
+            <div class="scrollspyhome text-justify p-3" data-spy="scroll" data-target="#navbarScrollspy" data-offset="50">
+                <h1 id="item1">Inicio</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eligendi, harum at adipisci atque incidunt quidem error asperiores, neque cumque tempore numquam dolore aspernatur sit voluptas blanditiis. Omnis, sed itaque?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum quae itaque laudantium beatae in provident quibusdam reprehenderit voluptatum consequuntur, animi quod suscipit quos alias voluptate distinctio, numquam voluptates iure facere.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae nam similique perspiciatis, repudiandae laborum distinctio vero odit, adipisci ipsa cumque, dolorum voluptatum aliquam repellat quidem quae eligendi. Aliquid, delectus assumenda.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sit deleniti repudiandae eveniet dolor cupiditate. Quia eum similique sit velit accusantium aut optio deserunt soluta at aspernatur. Inventore, sed explicabo?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora necessitatibus optio itaque commodi natus possimus molestias nostrum sunt? Aliquid repudiandae et at dolore expedita eveniet atque, perspiciatis omnis beatae consequatur?
+                </p>
+                <h1 id="item2">Perfil</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eligendi, harum at adipisci atque incidunt quidem error asperiores, neque cumque tempore numquam dolore aspernatur sit voluptas blanditiis. Omnis, sed itaque?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum quae itaque laudantium beatae in provident quibusdam reprehenderit voluptatum consequuntur, animi quod suscipit quos alias voluptate distinctio, numquam voluptates iure facere.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae nam similique perspiciatis, repudiandae laborum distinctio vero odit, adipisci ipsa cumque, dolorum voluptatum aliquam repellat quidem quae eligendi. Aliquid, delectus assumenda.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sit deleniti repudiandae eveniet dolor cupiditate. Quia eum similique sit velit accusantium aut optio deserunt soluta at aspernatur. Inventore, sed explicabo?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora necessitatibus optio itaque commodi natus possimus molestias nostrum sunt? Aliquid repudiandae et at dolore expedita eveniet atque, perspiciatis omnis beatae consequatur?
+                </p>
+                <h1 id="item3">Serviços</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eligendi, harum at adipisci atque incidunt quidem error asperiores, neque cumque tempore numquam dolore aspernatur sit voluptas blanditiis. Omnis, sed itaque?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum quae itaque laudantium beatae in provident quibusdam reprehenderit voluptatum consequuntur, animi quod suscipit quos alias voluptate distinctio, numquam voluptates iure facere.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae nam similique perspiciatis, repudiandae laborum distinctio vero odit, adipisci ipsa cumque, dolorum voluptatum aliquam repellat quidem quae eligendi. Aliquid, delectus assumenda.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sit deleniti repudiandae eveniet dolor cupiditate. Quia eum similique sit velit accusantium aut optio deserunt soluta at aspernatur. Inventore, sed explicabo?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora necessitatibus optio itaque commodi natus possimus molestias nostrum sunt? Aliquid repudiandae et at dolore expedita eveniet atque, perspiciatis omnis beatae consequatur?
+                </p>
+                <h1 id="item4">Testemunho</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eligendi, harum at adipisci atque incidunt quidem error asperiores, neque cumque tempore numquam dolore aspernatur sit voluptas blanditiis. Omnis, sed itaque?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum quae itaque laudantium beatae in provident quibusdam reprehenderit voluptatum consequuntur, animi quod suscipit quos alias voluptate distinctio, numquam voluptates iure facere.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae nam similique perspiciatis, repudiandae laborum distinctio vero odit, adipisci ipsa cumque, dolorum voluptatum aliquam repellat quidem quae eligendi. Aliquid, delectus assumenda.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sit deleniti repudiandae eveniet dolor cupiditate. Quia eum similique sit velit accusantium aut optio deserunt soluta at aspernatur. Inventore, sed explicabo?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora necessitatibus optio itaque commodi natus possimus molestias nostrum sunt? Aliquid repudiandae et at dolore expedita eveniet atque, perspiciatis omnis beatae consequatur?
+                </p>
+                <h1 id="item5">Social</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eligendi, harum at adipisci atque incidunt quidem error asperiores, neque cumque tempore numquam dolore aspernatur sit voluptas blanditiis. Omnis, sed itaque?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum quae itaque laudantium beatae in provident quibusdam reprehenderit voluptatum consequuntur, animi quod suscipit quos alias voluptate distinctio, numquam voluptates iure facere.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae nam similique perspiciatis, repudiandae laborum distinctio vero odit, adipisci ipsa cumque, dolorum voluptatum aliquam repellat quidem quae eligendi. Aliquid, delectus assumenda.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sit deleniti repudiandae eveniet dolor cupiditate. Quia eum similique sit velit accusantium aut optio deserunt soluta at aspernatur. Inventore, sed explicabo?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora necessitatibus optio itaque commodi natus possimus molestias nostrum sunt? Aliquid repudiandae et at dolore expedita eveniet atque, perspiciatis omnis beatae consequatur?
+                </p>
+                <h2 id="item5-1">Facebook</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eligendi, harum at adipisci atque incidunt quidem error asperiores, neque cumque tempore numquam dolore aspernatur sit voluptas blanditiis. Omnis, sed itaque?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum quae itaque laudantium beatae in provident quibusdam reprehenderit voluptatum consequuntur, animi quod suscipit quos alias voluptate distinctio, numquam voluptates iure facere.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae nam similique perspiciatis, repudiandae laborum distinctio vero odit, adipisci ipsa cumque, dolorum voluptatum aliquam repellat quidem quae eligendi. Aliquid, delectus assumenda.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sit deleniti repudiandae eveniet dolor cupiditate. Quia eum similique sit velit accusantium aut optio deserunt soluta at aspernatur. Inventore, sed explicabo?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora necessitatibus optio itaque commodi natus possimus molestias nostrum sunt? Aliquid repudiandae et at dolore expedita eveniet atque, perspiciatis omnis beatae consequatur?
+                </p>
+                <h2 id="item5-2">twitar</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eligendi, harum at adipisci atque incidunt quidem error asperiores, neque cumque tempore numquam dolore aspernatur sit voluptas blanditiis. Omnis, sed itaque?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum quae itaque laudantium beatae in provident quibusdam reprehenderit voluptatum consequuntur, animi quod suscipit quos alias voluptate distinctio, numquam voluptates iure facere.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae nam similique perspiciatis, repudiandae laborum distinctio vero odit, adipisci ipsa cumque, dolorum voluptatum aliquam repellat quidem quae eligendi. Aliquid, delectus assumenda.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sit deleniti repudiandae eveniet dolor cupiditate. Quia eum similique sit velit accusantium aut optio deserunt soluta at aspernatur. Inventore, sed explicabo?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora necessitatibus optio itaque commodi natus possimus molestias nostrum sunt? Aliquid repudiandae et at dolore expedita eveniet atque, perspiciatis omnis beatae consequatur?
+                </p>
+                <h2 id="item5-3">Instragram</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eligendi, harum at adipisci atque incidunt quidem error asperiores, neque cumque tempore numquam dolore aspernatur sit voluptas blanditiis. Omnis, sed itaque?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum quae itaque laudantium beatae in provident quibusdam reprehenderit voluptatum consequuntur, animi quod suscipit quos alias voluptate distinctio, numquam voluptates iure facere.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae nam similique perspiciatis, repudiandae laborum distinctio vero odit, adipisci ipsa cumque, dolorum voluptatum aliquam repellat quidem quae eligendi. Aliquid, delectus assumenda.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sit deleniti repudiandae eveniet dolor cupiditate. Quia eum similique sit velit accusantium aut optio deserunt soluta at aspernatur. Inventore, sed explicabo?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora necessitatibus optio itaque commodi natus possimus molestias nostrum sunt? Aliquid repudiandae et at dolore expedita eveniet atque, perspiciatis omnis beatae consequatur?
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-sm-3">
+                <div class="card">
+                    <div class="card-header col- texte-center p-2">Lembrancinha</div>
+                    <img class="card-img-top" src="../img/card1.jpg" alt="">
+                    <h5 class="card-title">Nobis Numquam provident</h5>
+                    <h6 class="card-sub-text mb-2 "></h6>
                 </div>
             </div>
-            <div class="carousel-item ">
-                <img src="/img/img3.jpg" class="img-fluid d-block">
-                <div class="carousel-caption">
-                    <h3>Eveniet animi doloribus ab vero</h3>
-                    <p class="d-none d-sm-block">maxime obcaecati, unde impedit ea temporibus quasi ex non sunt tempore?.</p>
-                </div>
-            </div>
-
-            <a href="#carouselhome" class="carousel-control-prev" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-                <span class="sr-only">Anterior</span>
-            </a>
-            <a href="#carouselhome" class="carousel-control-next" role="button" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-                <span class="sr-only">Proximo</span>
-            </a>
-
-            <ol class="carousel-indicators">
-                <li class="active" data-target="#carouselhome" data-slide-to="0"></li>
-                <li  data-target="#carouselhome" data-slide-to="1"></li>
-                <li  data-target="#carouselhome" data-slide-to="2"></li>
-            </ol>
-
         </div>
     </div>
 
